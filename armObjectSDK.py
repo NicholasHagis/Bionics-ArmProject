@@ -64,6 +64,9 @@ class armSDK ():
         position = float(ar.readline())
         print(position)
 
+class UI():
+
+class gesture():
         
 if __name__ == "__main__":
     arm = armSDK()
