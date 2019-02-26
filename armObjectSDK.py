@@ -18,12 +18,38 @@ import time
 
 #class definition
 class armSDK ():
-    def __init__(self):    
-        pass#Probebly need some variables in here 
+    def __init__(self): 
+        #jointObject1:
+            #curPos
+            #curSpeed
+        #jointObject2:
+            #curPos
+            #curSpeed
+        #jointObject3:
+            #curPos
+            #curSpeed
+        #kinematicModel, function with new values
+        pass
     
     def setUp(self):
         pass
-
+    
+    def sendData(data):
+        #send data (write to serial?)
+        #wait for confirmation of receipt
+        #timeout error if time exceeds limit
+        #end, no return value
+    
+    def requestData(datatype):
+        #send request
+        #store data
+        #assign received and stored data in sdk properties for kinematic model update
+    
+    def update():
+        #call kinematicModel to reassign property values depending on new requested data.
+    
+########################## Testing Methods #################################################
+        
     def turnOn():
     ### Function using serial communications to turn Arduino led on. Developed with Arduino code ArduinoLEDSerial.
         ar.write('1'.encode()) #Send whatever you want to send to the Arduino's serial. Should be received by Arduino code.
@@ -31,7 +57,7 @@ class armSDK ():
     def turnOff():
     ### Function using serial communication to turn Arduino led off. Developed with Arduino code ArduinoLEDSerial.
         ar.write('0'.encode()) #Send whatever you want to send to the Arduino's serial. Should be received by Arduino code.
-    
+
     def getVoltage():
     ### Function using serial communication to read state of a potentiometer
         ar.write('2'.encode())
